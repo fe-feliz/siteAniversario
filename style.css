@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/foto5.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+}
+
+h1{
+    margin-top: 30px;
+    color: rgb(10, 59, 0);
+}
+
+#mensagem {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(3, 77, 28);
+    padding: 10px 20px;
+    margin: 0;
+    
+}
+
+#fotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(10, 59, 0);
+    position: relative;
+    top: -20px;
+}
+
+
+#fotos h1 {
+    margin-bottom: 30px;
+}
+
+.fotos-container {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 15px;
+}
+
+#fotos p{
+    align-items: center;
+    color: rgb(3, 77, 28);
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.foto img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.foto img:hover {
+    transform: scale(1.08);
+}
+
+.quote-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(3, 77, 28);
+    padding: 10px 20px;
+    margin: 0;
+}
+
+#surpresa h1 {
+    margin-top: 30px;
+    color: rgb(10, 59, 0);
+    align-items: center;
+
+}
+
+#surpresa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(10, 59, 0);
+    position: relative;
+    top: -20px;
+}
+
+#btn {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color : rgb(255, 255, 255);
+    background-color: rgb(22, 87, 22);
+}
+
+#msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 20px;
+    background-color: rgb(76, 102, 79);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(10, 59, 0);
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 26px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    #mensagem {
+        padding: 10px 25px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    #fotos {
+        width: 100%;
+        top: -10px;
+    }
+
+    #fotos h1 {
+        margin-bottom: 20px;
+        padding: 0 20px;
+    }
+
+    .fotos-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        width: 90%;
+    }
+
+    .foto img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+
+    #fotos p {
+        padding: 8px 5px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .quote-section {
+        padding: 10px 25px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    #surpresa {
+        width: 100%;
+        top: -10px;
+    }
+
+    #msg {
+        margin-left: 25px;
+        margin-right: 25px;
+        padding: 15px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
+}
